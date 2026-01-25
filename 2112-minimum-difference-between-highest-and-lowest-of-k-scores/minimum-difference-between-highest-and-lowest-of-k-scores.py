@@ -6,7 +6,7 @@ class Solution:
         nums.sort()
         mini = float('inf')
         
-        for i in range(len(nums) - k + 1):
+        for i in range(len(nums)-k+1):
             diff = nums[i + k - 1] - nums[i]
             mini = min(mini, diff)
         
