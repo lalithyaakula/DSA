@@ -6,8 +6,6 @@ class Solution:
         for i in range(0,len(nums)):
             ans+=nums[i]
             mod=ans%k
-            if mod<0:
-                mod+=k
             if mod in hash_map:
                 count+=hash_map[mod]
                 hash_map[mod]+=1
